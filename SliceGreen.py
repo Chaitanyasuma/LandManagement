@@ -75,13 +75,17 @@ num_green = cv2.countNonZero(dst)
 # In[56]:
 
 
-green_area=num_green*15
+green_area=num_green*15^2
 #print ('The green coverage area is: '+ str(green_area)+' sq. metres' )
 
 
 # In[58]:
 
 
-carbonemissions=(15^2*num_green*100)/4046.86
+carbonemissions=(green_area*100)/(4046.86*350*(2.13)*44)
 #print (carbonemissions)
+
+
+
+'''
 
